@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First html page</title>
+</head>
+<body>
+    <div id="app">
+        <p id="p1" style="color: red;">Just React</p>
+        <p id="p2" style="color: green;">2024</p>
+        <button onclick="changeContent()">change Content</button>
+    </div>
+    <script>
+        function changeContent(){
+            const p1=document.getElementById('p1');
+            p1.textContent='Welocme to web';
+            const p2=document.getElementById('p2');
+            p2.textContent='1992';
+        }
+    </script>
+</body>
+</html>
