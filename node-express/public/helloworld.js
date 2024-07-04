@@ -3,7 +3,7 @@ const fs=require('fs')
 const port=3000
 
 function serveStaticFile(res,path,contentType,responseCode=200){
-    fs.readFile(__dirname+path,(err,data)=>{
+    fs.readFile(__dirname+path,(err,data)=>{                 //if my script resolves in /home/sites/app.js,__dirname will resolve to home/sites
         if(err){
             console.error(`Error reading file: ${err}`);  // Log errors to console
             res.writeHead(500,{'Content-Type':'text/plain'})
